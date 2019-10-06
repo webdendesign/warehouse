@@ -1,11 +1,33 @@
 .page-header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   margin: 0 auto;
-  width: 1100px;
-  min-height: 50px;
-  padding: 25px 0;
+  width: 1500px;
+  padding: 0;
+}
+
+.page-header__product {
+  display: flex;
+}
+
+.page-header__salt {
+  position: relative;
+  min-height: 665px;
+  background-color: #e9eae2;
+
+  background-image: url("../img/Layer_36.jpg");
+}
+
+.page-header__cork {
+  font-size: 24px;
+  font-weight: lighter;
+  color: $cl-gray;
+}
+
+.page-header__price {
+  font-size: 24px;
+  font-weight: lighter;
+  color: $cl-gray;
 }
 
 .page-header__logo {
