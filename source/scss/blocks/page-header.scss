@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  width: 1500px;
+  width: 1300px;
   padding: 0;
 }
 
@@ -13,14 +13,16 @@
 .page-header__salt {
   position: relative;
   min-height: 665px;
+  width: 500px;
   background-color: #e9eae2;
+  background-image: url("../img/Layer_36.png");
+  background-repeat: no-repeat;
 
-  background-image: url("../img/Layer_36.jpg");
 }
 
 .page-header__cork {
   font-size: 24px;
-  font-weight: lighter;
+  font-weight: 300;
   color: $cl-gray;
 }
 
@@ -30,19 +32,151 @@
   color: $cl-gray;
 }
 
+.page-header__autor {
+  width: 400xp;
+  background-color: #e9eae2;
+  text-align: center;
+}
+
+.page-header__desc {
+  margin: 10px 0 30px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #acada7;
+}
+
+.page-header__title {
+  margin: 0;
+  font-size: 50px;
+  font-weight: 300px;
+  color: #33342d;
+}
+
+.page-header__right {
+  width: 382px;
+  min-height: 665px;
+  background-image: url("../img/bg-right.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .page-header__logo {
   display: block;
 }
 
 .page-header__list {
-  width: 490px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   @include list;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .page-header__item {
-  font-size: 14px;
-  line-height: 60px;
+  width: 140px;
+  padding: 80px 0 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $cl-blue;
+  text-align: center;
+
+  &--bowls {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 40px;
+      left: 35px;
+      width: 34px;
+      height: 20px;
+      background-image: url("../img/icon-bowls.png");
+    }
+  }
+
+  &--cups {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 40px;
+      left: 35px;
+      width: 20px;
+      height: 31px;
+      background-image: url("../img/icon-cups.png");
+    }
+  }
+
+  &--disp {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 40px;
+      left: 35px;
+      width: 13px;
+      height: 35px;
+      background-image: url("../img/icon-dispensers.png");
+    }
+  }
+
+  &--furn {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 40px;
+      left: 35px;
+      width: 41px;
+      height: 26px;
+      background-image: url("../img/icon-furniture.png");
+    }
+  }
+
+  &--tabl {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 40px;
+      left: 35px;
+      width: 33px;
+      height: 33px;
+      background-image: url("../img/icon-tableware.png");
+    }
+  }
+
+  &--cutlery {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 40px;
+      left: 35px;
+      width: 9px;
+      height: 33px;
+      background-image: url("../img/icon-cutlery.png");
+    }
+  }
+
+  &--plants {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 40px;
+      left: 35px;
+      width: 34px;
+      height: 39px;
+      background-image: url("../img/icon-deco.png");
+    }
+  }
 }

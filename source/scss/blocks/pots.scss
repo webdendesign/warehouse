@@ -1,0 +1,63 @@
+.pots {
+    background-color: #f5f5f5;
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__collection {
+        position: relative;
+        width: 375px;
+        min-height: 140px;
+        padding-top: 230px;
+        text-align: center;
+        background-color: #7dd5c9;
+        
+        &::before {
+            position: absolute;
+            content: "";
+            top: 120px;
+            left: 120px;
+            width: 128px;
+            height: 79px;
+            background-image: url("../img/icon-pots.png");
+        }
+    }
+
+    &__seven {
+        margin: 0 0 10px;
+        font-size: 20px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #266258;
+    }
+
+    &__intro {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #438a7e; 
+    }
+
+    &__tea {
+        display: flex;
+        justify-content: space-between;
+        width: 925px;
+    }
+
+    &__desc {
+        margin: 10px 0 30px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #acada7;
+      }
+      
+      &__title {
+        margin: 0;
+        font-size: 50px;
+        font-weight: 300px;
+        color: #33342d;
+      }
+}
