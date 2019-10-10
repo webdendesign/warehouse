@@ -1,4 +1,4 @@
-.pots {
+.authentics {
     background-color: #f5f5f5;
 
     &__wrapper {
@@ -8,19 +8,19 @@
     &__collection {
         position: relative;
         width: 375px;
-        min-height: 140px;
-        padding-top: 230px;
+        min-height: 120px;
+        padding-top: 250px;
         text-align: center;
-        background-color: #7dd5c9;
+        background-color: #f8c255;
         
         &::before {
             position: absolute;
             content: "";
             top: 120px;
-            left: 120px;
-            width: 128px;
-            height: 79px;
-            background-image: url("../img/icon-pots.png");
+            left: 130px;
+            width: 118px;
+            height: 115px;
+            background-image: url("../img/icon-authentics.png");
         }
     }
 
@@ -29,7 +29,7 @@
         font-size: 20px;
         font-weight: 300;
         text-transform: uppercase;
-        color: #266258;
+        color: #785e28;
     }
 
     &__intro {
@@ -37,16 +37,16 @@
         font-size: 14px;
         font-weight: 400;
         text-transform: uppercase;
-        color: #438a7e; 
+        color: #ae883b; 
     }
 
-    &__tea {
+    &__basics {
         display: flex;
         justify-content: space-between;
         width: 925px;
-        background-image: url("../img/tea.png");
+        background-image: url("../img/bowl.png");
         background-repeat: no-repeat;
-        background-position: 220px 70px;
+        background-position: 190px 235px;
     }
 
     &__left {
@@ -84,24 +84,13 @@
             left: 0;
             width: 16px;
             height: 17px;
-            background-image: url("../img/icon-heart.png");
+            background-image: url("../img/icon-shaker-heart.png");
         }
     }
 
     &__right {
-        position: relative;
         width: 300px;
         padding-top: 70px;
-
-        &::before {
-            position: absolute;
-            content: "";
-            top: 180px;
-            right: 50px;
-            width: 12px;
-            height: 17px;
-            background-image: url("../img/icon-right-pots.svg");
-        }
     }
 
     &__right img {

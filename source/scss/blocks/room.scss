@@ -1,0 +1,43 @@
+.room {
+    min-height: 330px;
+    background-color: $bg-color;
+    background-image: url("../img/rooms.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__wrapper {
+        position: relative;
+        padding: 180px 0 0 455px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 80px;
+            left: 400px;
+            width: 161px;
+            height: 162px;
+            background-image: url("../img/ellipse.svg");
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 135px;
+            left: 465px;
+            width: 32px;
+            height: 26px;
+            background-image: url("../img/icon-diamond.png");
+        }
+    }
+
+    &__title {
+        z-index: 1;
+        position: relative;
+        margin: 0;
+        font-size: 16px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $cl-gray;
+    }
+}
