@@ -13,6 +13,7 @@
     &__list {
         @include list;
         margin-top: 160px;
+        margin-bottom: 30px;
         display: flex;
         justify-content: space-between;
         width: 210px;
@@ -22,34 +23,53 @@
         display: block;
     }
 
+    &__copyright {
+        margin: 0;
+        font-size: 16px;
+        line-height: 20px;
+        color: #7c7a7a;
+    }
+
+    &__right {
+        margin-top: 120px;
+        text-align: center;
+    }
+
     &__photo {
         display: flex;
+        margin-bottom: 20px;
     }
 
     &__sqrt {
         width: 100px;
         height: 100px;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     &__green {
+        margin: 0;
         width: 50px;
         height: 50px;
         background-color: #bfe79e;
     }
 
     &__orange {
+        margin: 0;
         width: 50px;
         height: 50px;
         background-color: #f8c255;
     }
 
     &__blue {
+        margin: 0;
         width: 50px;
         height: 50px;
         background-color: #7dd5c9;
     }
 
     &__red {
+        margin: 0;
         width: 50px;
         height: 50px;
         background-color: #ff9b6d;

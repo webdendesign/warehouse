@@ -1,32 +1,128 @@
 .page-header {
-  display: flex;
-  flex-direction: row;
   margin: 0 auto;
-  width: 1300px;
-  padding: 0;
+  min-height: 665px;
+  background-color: #ffffff;
+}
+
+.page-header__wrapper {
+  position: relative;
+  display: flex;
+  background-color: #ffffff;
+
+  &::before {
+    z-index: 5;
+    position: absolute;
+    content: "";
+    top: 142px;
+    left: 160px;
+    width: 415px;
+    height: 523px;
+    background: url("../img/Layer_36.png") no-repeat;
+  }
+}
+
+.page-header__arrow {
+  position: relative;
+  @include list;
+}
+
+.page-header__left-item,
+.page-header__right-item {
+  z-index: 4;
+  position: absolute;
+  top: 90px;
+  width: 7px;
+  height: 14px;
+}
+
+.page-header__left-item {
+  left: 360px;
+}
+
+.page-header__right-item {
+  left: 420px;
 }
 
 .page-header__product {
+  position: relative;
   display: flex;
+
+  &::before {
+    z-index: 2;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 220px;
+    width: 343px;
+    height: 285px;
+    background: url("../img/icon-tringle.svg") no-repeat;
+  }
+
+  &::after {
+    z-index: 3;
+    position: absolute;
+    content: "";
+    top: 70px;
+    left: 380px;
+    width: 25px;
+    height: 52px;
+    background: url("../img/salt_bottle.png") no-repeat;
+
+  }
 }
 
 .page-header__salt {
   position: relative;
-  min-height: 665px;
   width: 500px;
+  padding: 20px 0 0 20px;
   background-color: #e9eae2;
-  background-image: url("../img/Layer_36.png");
-  background-repeat: no-repeat;
+}
 
+.page-header__sqrt {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-header__green {
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  background-color: #bfe79e;
+}
+
+.page-header__orange {
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  background-color: #f8c255;
+}
+
+.page-header__blue {
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  background-color: #7dd5c9;
+}
+
+.page-header__red {
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  background-color: #ff9b6d;
 }
 
 .page-header__cork {
+  margin: 140px 0 10px 30px;
   font-size: 24px;
   font-weight: 300;
   color: $cl-gray;
 }
 
 .page-header__price {
+  margin: 0;
+  margin-left: 30px;
   font-size: 24px;
   font-weight: lighter;
   color: $cl-gray;
@@ -34,6 +130,7 @@
 
 .page-header__autor {
   width: 400xp;
+  padding-top: 145px;
   background-color: #e9eae2;
   text-align: center;
 }
@@ -49,7 +146,7 @@
 .page-header__title {
   margin: 0;
   font-size: 50px;
-  font-weight: 300px;
+  font-weight: lighter;
   color: #33342d;
 }
 
@@ -74,7 +171,7 @@
 }
 
 .page-header__item {
-  width: 140px;
+  width: 130px;
   padding: 80px 0 0;
   font-size: 16px;
   font-weight: bold;

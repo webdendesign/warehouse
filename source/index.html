@@ -4,37 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Resto</title>
+    <title>Warehouse</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__left">
-        <div class="page-header__product">
-          <div class="page-header__salt">
-            <p class="page-header__cork">Cork Salt & Pepper</p>
-            <p class="page-header__price">45.50 $</p>
+      <div class="container">
+        <div class="page-header__wrapper">
+          <ul class="page-header__arrow">
+            <li class="page-header__arrow-item"><span class="visually-hidden">Сдвинуть влево</span>
+              <svg class="page-header__left-item" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7" height="14" viewBox="0 0 7 14">
+                <image width="7" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAOCAMAAADUg/YpAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAUVBMVEX////BkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkiYAAAA7WtI7AAAAGXRSTlMASLwV1QHW3PW7DJcplS6mGqrS8OLAJMFYZEQ+KAAAAAFiS0dEGnVn5DIAAAAJcEhZcwAALiMAAC4jAXilP3YAAAAHdElNRQfjCgUWKi/9ewWsAAAARElEQVQI1zXISRKAIAxE0TigiAOCMvT9L2qlU2bzfkdEbxjJhFlxWDhXTzYEZcehnLj4jbippD8ynMXzmgHFoqJZ9PwBbkgCWHb16QkAAAAASUVORK5CYII="/>
+              </svg>              
+            </li>
+            <li class="page-header__arrow-item"><span class="visually-hidden">Сдвинуть вправо</span>
+              <svg class="page-header__right-item" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7" height="14" viewBox="0 0 7 14">
+                <image width="7" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAOCAMAAADUg/YpAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAYFBMVEX////BkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkibBkiYAAACo1kp2AAAAHnRSTlMArX6ZSJYnuBXe+QP82PjN8uHq6MkNoSSDN4ZcwZEXqLbRAAAAAWJLR0QfBQ0QvQAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAAd0SU1FB+MKBRYqBr/JncAAAABDSURBVAjXJclXDoAwFAPB0EuAkNCb739M9Gz/zEp2We64AqWiQq1o0Cq63iuGUfopKOZI0kJWbMaOwzhxGTcenu9HfnFSApFjwBWoAAAAAElFTkSuQmCC"/>
+              </svg>              
+            </li>
+          </ul>
+          <div class="page-header__left">
+            <div class="page-header__product">
+              <div class="page-header__salt">
+                <div class="page-header__sqrt">
+                  <p class="page-header__orange"></p>
+                  <p class="page-header__green"></p>
+                  <p class="page-header__red"></p>
+                  <p class="page-header__blue"></p>
+                </div>
+                <p class="page-header__cork">Cork Salt & Pepper</p>
+                <p class="page-header__price">45.50 $</p>
+              </div>
+              <div class="page-header__autor">
+                <img src="img/photo_1.png" width="60" height="60" alt="nendo" class="page-header__img">
+                <p class="page-header__desc">By materia & nendo</p>
+                <p class="page-header__title">Good Things come in Paris</p>
+              </div>
+            </div>
           </div>
-          <div class="page-header__autor">
-            <img src="img/photo_1.png" width="60" height="60" alt="nendo" class="page-header__img">
-            <p class="page-header__desc">By materia & nendo</p>
-            <p class="page-header__title">Good Things come in Paris</p>
+          <div class="page-header__right">
+            <a class="page-header__logo">
+              <img src="img/logo.png" alt="warehouse">
+            </a>
+            <ul class="page-header__list">
+              <li class="page-header__item page-header__item--bowls"><a href="#">Bowls & pans</a></li>
+              <li class="page-header__item page-header__item--cups"><a href="#">Cups</a></li>
+              <li class="page-header__item page-header__item--disp"><a href="#">Dispensers</a></li>
+              <li class="page-header__item page-header__item--furn"><a href="#">Furniture</a></li>
+              <li class="page-header__item page-header__item--tabl"><a href="#">Tableware</a></li>
+              <li class="page-header__item page-header__item--cutlery"><a href="#">Cutlery</a></li>
+              <li class="page-header__item page-header__item--plants"><a href="#">Plants & deco</a></li>
+            </ul>
           </div>
         </div>
-      </div>
-      <div class="page-header__right">
-        <a class="page-header__logo">
-          <img src="img/logo.png" alt="warehouse">
-        </a>
-        <ul class="page-header__list">
-          <li class="page-header__item page-header__item--bowls">Bowls & pans</li>
-          <li class="page-header__item page-header__item--cups">Cups</li>
-          <li class="page-header__item page-header__item--disp">Dispensers</li>
-          <li class="page-header__item page-header__item--furn">Furniture</li>
-          <li class="page-header__item page-header__item--tabl">Tableware</li>
-          <li class="page-header__item page-header__item--cutlery">Cutlery</li>
-          <li class="page-header__item page-header__item--plants">Plants & deco</li>
-        </ul>
       </div>
     </header>
 
@@ -125,34 +147,34 @@
             <ul class="footer__list">
               <li class="footer__item">
                 <a href="#" class="footer__link">
-                  <img src="../img/icon-tea-pots.png" width="55" height="34" alt="">
+                  <img src="img/icon-tea-pots.png" width="55" height="34" alt="pots">
                 </a>
               </li>
               <li class="footer__item">
                 <a href="#" class="footer__link">
-                  <img src="../img/icon-shaker-footer.png" width="17" height="39" alt="">
+                  <img src="img/icon-shaker-footer.png" width="17" height="39" alt="shaker">
                 </a>
               </li>
               <li class="footer__item">
                 <a href="#" class="footer__link">
-                  <img src="../img/icon-authentics-footer.png" width="43" height="43" alt="">
+                  <img src="img/icon-authentics-footer.png" width="43" height="43" alt="authenntics">
                 </a>
               </li>
             </ul>
-            <p class="footer__copyright"></p>
+            <p class="footer__copyright">2014 WARE HOUSE, USA based company. Image right belong to their respective owners.</p>
           </div>
           <div class="footer__right">
             <div class="footer__photo">
               <div class="footer__sqrt">
-                <div class="footer__green"></div>
-                <div class="footer__orange"></div>
-                <div class="footer__blue"></div>
-                <div class="footer__red"></div>
+                <p class="footer__green"></p>
+                <p class="footer__orange"></p>
+                <p class="footer__blue"></p>
+                <p class="footer__red"></p>
               </div>
-              <img src="../img/photo_5.jpg" width="110" height="100" alt="">
+              <img src="img/photo_5.jpg" width="110" height="100" alt="photo">
             </div>
             <a href="#" class="footer__logo">
-              <img src="../img/logo-footer.svg" width="142" height="23" alt="">
+              <img src="img/warehouse-footer.png" width="142" height="23" alt="warehouse">
             </a>
           </div>
         </div>
